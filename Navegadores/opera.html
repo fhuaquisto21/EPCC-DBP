@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/opera.css">
+        <title>Opera</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="historia">
+                    <a href="#historia">
+                        <ion-icon name="book-outline"></ion-icon> <span>Historia</span>
+                    </a>
+                </li>
+                <li class="caracteristicas">
+                    <a href="#caracteristicas">
+                        <ion-icon name="shapes-outline"></ion-icon> <span>Características</span>
+                    </a>
+                </li>
+                <li class="comparaciones">
+                    <a href="#comparaciones">
+                        <ion-icon name="easel-outline"></ion-icon> <span>Comparaciones</span>
+                    </a>
+                </li>
+                <li class="estadisticas">
+                    <a href="#estadisticas">
+                        <ion-icon name="bar-chart-outline"></ion-icon> <span>Estadísticas</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="historia">
+            <article>
+                <h2>Historia</h2>
+                <p>El navegador comenzó en 1995 como un proyecto de investigación en Telenor, una empresa de telecomunicaciones noruega. En 1995, la empresa se ramificó y quedó en manos de Opera Software.
+                La primera versión pública del software vio la luz el 30 de abril de 1996 en su versión 2.0, la cual solo funcionaba en Microsoft Windows. La versión 3.0, lanzada el 1 de diciembre de 1997 introdujo el bloqueo de ventanas emergentes. En 1998 se desarrolló el primer navegador para dispositivos móviles. Opera 4.0, publicado el 28 de junio del 2000, incluyó la navegación por pestañas.</p>
+            </article>
+        </section>
+        <section id="caracteristicas">
+            <article>
+                <h2>Características</h2>
+                <ul>
+                    <li>Acceso Rápido (Speed Dial): permite guardar en la página de inicio del navegador miniaturas de sitios web seleccionados. Al hacer clic en una miniatura, el usuario visita la página web a la que pertenece la miniatura. Funciona como una especie de marcador (bookmark).</li>
+                    <li>Administrador de contraseñas.</li>
+                    <li>Administrador de descargas: permite, entre otras cosas, pausar cualquier descarga y continuarla cuando así se requiera (especialmente útil con archivos grandes), o realizar múltiples descargas simultáneamente llevando una mejor monitorización, así como poder llevar un historial de las mismas.</li>
+                    <li>Administrador de tareas: muestra información sobre los procesos del navegador; así como la opción de cerrar cada proceso.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="comparaciones">
+            <article>
+                <h2>Comparaciones</h2>
+                <p>El programa instalador, descargable desde el sitio oficial de Opera, permite escoger en «Opciones» la alternativa «Instalación autónoma (USB)» para lanzar el navegador como aplicación portátil. La versión portable puede ser ejecutada desde un disco duro, un CD o una memoria USB. No crea accesos directos ni queda como navegador predeterminado. Tampoco interfiere con otros navegadores instalados. Opera portable puede ser eliminado con simplemente borrar la carpeta que lo contiene. Opera portable no deja en la computadora rastros de navegación (excepto una entrada en el registro: HKEY_CURRENT_USER/Software/Opera Software).</p>
+            </article>
+        </section>
+        <section id="estadisticas">
+            <article>
+                <h2>Estadísticas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>*</th>
+                            <th>Usuarios activos</th>
+                            <th>Nuevas descargas</th>
+                            <th>Porcentaje del mercado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2010</td>
+                            <td>23M</td>
+                            <td>23M</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>30M</td>
+                            <td>7M</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>50M</td>
+                            <td>20M</td>
+                            <td>7%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let links = document.querySelectorAll('li')
+            for (let i = 0; i < links.length; i++) {
+                const aux = [0, 1, 2, 3]
+                links[i].querySelector('a').addEventListener('click', () => {
+                    links[i].classList.add('active')
+                    for (const au of aux) {
+                        if (au != i) {
+                            links[au].classList.remove('active')
+                        }
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>

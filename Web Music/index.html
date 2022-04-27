@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Web Music</title>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1>
+                    SPOTIPE
+                </h1>
+            </div>
+            <nav>
+                <div class="link">
+                    <a href="#album" class="active">
+                        ALBÚM
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#aviva">
+                        AVIVA
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#coldplay">
+                        COLDPLAY
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#fall-out-boy">
+                        FALL OUT BOY
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section id="album">
+            <div class="data">
+                <div class="title">
+                    <h2>
+                        ALBÚM
+                    </h2>
+                </div>
+                <div class="body">
+                    <p>Recopilación de las bandas y/o cantantes favoritas de mi persona, además de del agregado de unas de sus mejores canciones en formato mp3.</p>
+                    <p>Las bandas agregadas es de total <b>opinión propia</b> las cuales son: Aviva, Coldplay y Fall Out Boy.</p>
+                </div>
+                <a href="https://github.com/fhuaquisto21" class="button" target="_blank">
+                    Repositorio
+                </a>
+                <div class="_line"></div>
+            </div>
+        </section>
+        <section id="aviva" class="bands">
+
+        </section>
+        <section id="coldplay" class="bands">
+
+        </section>
+        <section id="fall-out-boy" class="bands">
+
+        </section>
+        <script>
+            let links = document.querySelectorAll('div.link a')
+            for (let i = 0; i < links.length; i++) {
+                const aux = [0, 1, 2, 3]
+                links[i].addEventListener('click', () => {
+                    links[i].classList.add('active')
+                    for (const au of aux) {
+                        if (au != i) {
+                            links[au].classList.remove('active')
+                        }
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>
