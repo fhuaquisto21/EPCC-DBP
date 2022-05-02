@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Peflix</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="header-title">
+                PEFLIX
+            </h1>
+        </header>
+        <nav>
+            <ul class="nav-movies">
+                <li class="nav-movies-movie benedict">
+                    <a href="#benedict">
+                        <div class="body">
+                            <div class="header">
+                                <h3 class="movie-title">
+                                    LA MISTERIOSA SOCIEDAD BENEDICT
+                                </h3>
+                                <span class="movie-quality">
+                                    HD
+                                </span>
+                            </div>
+                            <div class="footer">
+                                <span class="movie-rating">Rating</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-movies-movie merli">
+                    <a href="#merli">
+                        <div class="body">
+                            <div class="header">
+                                <h3 class="movie-title">
+                                    MERLÍ
+                                </h3>
+                                <span class="movie-quality">
+                                    HD
+                                </span>
+                            </div>
+                            <div class="footer">
+                                <span class="movie-rating">Rating</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-movies-movie one-piece">
+                    <a href="#one-piece">
+                        <div class="body">
+                            <div class="header">
+                                <h3 class="movie-title">
+                                    ONE PIECE
+                                </h3>
+                                <span class="movie-quality">
+                                    HD
+                                </span>
+                            </div>
+                            <div class="footer">
+                                <span class="movie-rating">Rating</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="benedict">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#E8AA31" fill-opacity="1" d="M0,192L120,192C240,192,480,192,720,165.3C960,139,1200,85,1320,58.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+            </svg>
+            <img class="benedict-character" src="./public/benedict-character.png" alt="Personaje de Benedict">
+            <div class="data">
+                <h2 class="title">La Misteriosa Sociedad Benedict</h2>
+                <span class="author">Trenton Lee Stewart</span>
+                <p class="resume">Durante una emergencia global que afecta a la economía y otros factores, el Sr. Benedict, un hombre de excepcional ingenio, recluta a cuatro talentosos niños que llevarán a cabo una peligrosa misión: infiltrarse en El Instituto, una elitista escuela de la que es director el Sr. Curtain, un misterioso personaje que está enviando mensajes subliminales a través de las señales de radio y televisión, con objeto de introducir ideas y pensamientos en las mentes de la gente. El Sr. Benedict enviará a los cuatro chicos para intentar detener al Sr. Curtain y salvar al mundo de su control.</p>
+                <ul class="seasons">
+                    <li class="season">Temporada 1: 8 episodios</li>
+                </ul>
+            </div>
+        </section>
+        <section id="merli">
+            <div class="images">
+                <img src="./public/merli-3.jpg" alt="Merli 1">
+            </div>
+            <div class="data">
+                <h2 class="title">Merlí</h2>
+                <span class="author">Héctor Lozano</span>
+                <p class="resume">Merlí Bergeron es mucho más que un profesor de filosofía. Es un hombre de moral muy particular, mordaz, seductor, original, irónico y divertido con un afilado humor negro. Un personaje cínico que irrita, pero también apasiona. Es, en definitiva, una figura impactante, incapaz de dejar indiferente.</p>
+                <ul class="seasons">
+                    <li class="season">Temporada 1: 13 episodios</li>
+                    <li class="season">Temporada 2: 13 episodios</li>
+                    <li class="season">Temporada 3: 14 episodios</li>
+                </ul>
+            </div>
+        </section>
+        <section id="one-piece">
+            <img src="./public/one-piece-luffy.png" alt="" class="luffy">
+            <div class="data">
+                <h2 class="title">One Piece</h2>
+                <span class="author">Eiichido Oda</span>
+                <p class="resume">One Piece es la historia de un chico llamado Monkey D. Luffy, quién se inspiró en Shanks, un pirata que le salvó la vida, para convertirse en el Rey de los Piratas. Al comienzo de la serie, veinticuatro años antes de la historia actual, un pirata llamado Gol D. Roger</p>
+                <video src="./public/one-piece-opening.webm" controls="true"></video>
+            </div>
+
+        </section>
+        <script>
+            let seconds = 0;
+              setInterval(() => {
+                  let merliImg = document.querySelector('#merli .images img');
+                  merliImg.src = `./public/merli-${(seconds % 3) + 1}.jpg`
+                  seconds++;
+                  console.log(seconds)
+              }, 5000)     
+        </script>
+    </body>
+</html>

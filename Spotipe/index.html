@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Web Music</title>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1>
+                    SPOTIPE
+                </h1>
+            </div>
+            <nav>
+                <div class="link">
+                    <a href="#album" class="active">
+                        ALBÚM
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#aviva">
+                        AVIVA
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#coldplay">
+                        COLDPLAY
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#fall-out-boy">
+                        FALL OUT BOY
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section id="album">
+            <div class="data">
+                <div class="title">
+                    <h2>
+                        ALBÚM
+                    </h2>
+                </div>
+                <div class="body">
+                    <p>Recopilación de las bandas y/o cantantes favoritas de mi persona, además de del agregado de unas de sus mejores canciones en formato mp3.</p>
+                    <p>Las bandas agregadas es de total <b>opinión propia</b> las cuales son: Aviva, Coldplay y Fall Out Boy.</p>
+                </div>
+                <a href="https://github.com/fhuaquisto21/EPCC-DBP" class="button" target="_blank">
+                    Repositorio
+                </a>
+                <div class="_line"></div>
+            </div>
+        </section>
+        <section id="aviva" class="bands">
+            <div class="data">
+                <div class="cover">
+                    <img src="./public/aviva-cover.jpg" alt="Aviva cover">
+                </div>
+                <div class="body">
+                    <h2>AVIVA</h2>
+                    <p>En el 2019, estuvo de gira con los músicos Poppy y YUNGBLUD. También pasó un tiempo de gira para escribir música nueva, luego lanzó un nuevo sencillo llamado PSYCHO. Después de eso, AViVA realizó su primera gira estadounidense. Ella quiere que su música tenga una gran conexión con la gente y que la gente se sienta orgullosa de quiénes son, y que no piensen en lo que los demás piensan de ellos, y que siempre sean ellos mismos.</p>
+                    <a href="https://aviva.fandom.com/wiki/AViVA" target="_blank">Leer más</a>
+                </div>
+            </div>
+        </section>
+        <section id="coldplay" class="bands">
+            <div class="data">
+                <div class="cover">
+                    <img src="./public/coldplay-cover.jpg" alt="Coldplay cover">
+                </div>
+                <div class="body">
+                    <h2>Coldplay</h2>
+                    <p>Coldplay es una banda de rock alternativo formada en Londres en 1998. El grupo esta formado por el vocalista, pianista y guitarrista Chris Martin, el guitarrista principal, Jonny Buckland, el bajista Guy Berryman, y el baterista Will Champion.</p>
+                    <a href="https://musica.fandom.com/es/wiki/Coldplay" target="_blank">Leer más</a>
+                </div>
+            </div>
+        </section>
+        <section id="fall-out-boy" class="bands">
+            <div class="data">
+                <div class="cover">
+                    <img src="./public/fall-out-boy-cover.jpeg" alt="Fall Out Boy cover">
+                </div>
+                <div class="body">
+                    <h2>Fall Out Boy</h2>
+                    <p>2001. La banda consta de cuatro miembros: Patrick Stump (vocalista principal, guitarra rítmica), Pete Wentz (bajista y cantante secundario), Joe Trohman (guitarrista principal) y Andrew Hurley (batería) y el grupo técnico, conformado por Johnny Thorpe y Paul Connor. En 2009 decidieron tomarse un descanso indefinido, sin embargo, el 4 de febrero de 2013 anunciaron su regreso.</p>
+                    <a href="https://musica.fandom.com/es/wiki/Fall_Out_Boy" target="_blank">Leer más</a>
+                </div>
+            </div>
+        </section>
+        <script>
+            let links = document.querySelectorAll('div.link a')
+            for (let i = 0; i < links.length; i++) {
+                const aux = [0, 1, 2, 3]
+                links[i].addEventListener('click', () => {
+                    links[i].classList.add('active')
+                    for (const au of aux) {
+                        if (au != i) {
+                            links[au].classList.remove('active')
+                        }
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>
