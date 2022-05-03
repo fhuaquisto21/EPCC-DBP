@@ -133,5 +133,6 @@ equal.addEventListener('click', () => {
 })
 ce.addEventListener('click', () => {
     result = '';
+    operation = '';
     resultElem.textContent = '0';
 })
