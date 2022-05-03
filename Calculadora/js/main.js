@@ -7,6 +7,7 @@ let n6 = document.getElementById('n6');
 let n7 = document.getElementById('n7');
 let n8 = document.getElementById('n8');
 let n9 = document.getElementById('n9');
+let n0 = document.getElementById('n0');
 
 let result = ''
 let operation = ''
@@ -82,6 +83,11 @@ n9.addEventListener('click', () => {
     result += '9'
     resultElem.textContent = result;
 })
+n0.addEventListener('click', () => {
+    result += '0'
+    resultElem.textContent = result;
+})
+
 mult.addEventListener('click', () => {
     if (operation === '') {
         result += '*'
