@@ -1,0 +1,150 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin: 56px 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Sansita';
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+header span {
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 18px;
+    color: #777;
+}
+
+header span::after {
+    content: ' ~';
+}
+
+header span::before {
+    content: '~ ';
+}
+
+section {
+    width: 90%;
+    max-width: 360px;
+}
+
+section form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+section form .input {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+section form .input label {
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+    margin: 0 0 4px 12px;
+}
+
+section form .input input {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: solid 1px #888;
+    outline: none;
+    padding: 0 12px;
+    font-family: 'Sansita';
+}
+
+section form .radio {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+section form .radio span {
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 12px;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+section form .radio .option {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+}
+
+section form .radio .option label {
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+section form .checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+section form .checkbox span {
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 12px;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+section form .checkbox .option {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+}
+
+section form .checkbox .option label {
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+section form input[type="submit"] {
+    width: 50%;
+    height: 40px;
+    align-self: center;
+    background-color: #C70A80;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}

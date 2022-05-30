@@ -1,0 +1,65 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 0;
+    gap: 12px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+}
+
+header span {
+    font-size: 18px;
+    color: #666;
+}
+
+header span::after {
+    content: ' ~';
+}
+
+header span::before {
+    content: '~ ';
+}
+
+section table tbody {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFF;
+}
+
+section table tbody tr {
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 1px solid #FFF;
+    background-color: #E3FCBF;
+}
+
+section table tbody tr th {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    border: 1px solid #FFF;
+}
+section table tbody tr th.primo {
+    background-color: #14C38E;
+}

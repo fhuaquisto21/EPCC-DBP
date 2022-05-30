@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>GET</title>
+    </head>
+    <body>
+        <header>
+            <h1>Fabricio Huaquisto Quispe</h1>
+            <span>Formulario - GET</span>
+        </header>
+        <section>
+            <form action="./pages/result.php" method="get">
+                <div class="input">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="input">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="radio">
+                    <span>Estado civil</span>
+                    <div class="option">
+                        <input type="radio" name="civilstatus" id="married" value="casado">
+                        <label for="married">Casado</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="civilstatus" id="single" value="soltero">
+                        <label for="single">Soltero</label>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <span>Afisiones</span>
+                    <div class="option">
+                        <input type="checkbox" name="hobbies" id="student" value="estudiante">
+                        <label for="student">Estudiante</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="hobbies" id="teacher" value="profesor">
+                        <label for="teacher">Profesor</label>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </body>
+</html>

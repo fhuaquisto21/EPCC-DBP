@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Formulario de Registro</title>
+    </head>
+    <body>
+        <aside class="register">
+            <h2>Registro</h2>
+            <div class="form">
+                <input type="text" placeholder="Nombres" id="name">
+                <input type="text" placeholder="Apellidos" id="lastname">
+                <input type="email" placeholder="Correo electrónico" id="email">
+                <input type="text" placeholder="Lugar de nacimiento" id="birtplace">
+                <button onclick="submitUser()">Subir</button>
+            </div>
+        </aside>
+        <section class="users">
+            <h2>Usuarios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>CORREO</th>
+                        <th>L. NACIMIENTO</th>
+                        <th>ELIMINAR</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
