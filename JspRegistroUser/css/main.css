@@ -1,0 +1,138 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+}
+
+aside.register {
+    width: 300px;
+    margin-top: 48px;
+    position: sticky;
+    top: 48px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside.register h2 {
+    font-family: 'Sansita';
+    font-weight: 600;
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+aside.register .form {
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside.register .form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+aside.register .form button {
+    width: 60%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #39AEA9;
+    font-family: 'Sansita';
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFF;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+section.users {
+    width: 90%;
+    justify-self: center;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.users h2 {
+    font-family: 'Sansita';
+    font-weight: 600;
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+section.users table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 1px solid #555;
+    overflow: hidden;
+}
+
+section.users table thead tr {
+    width: 100%;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 64px repeat(5, 1fr);
+    place-items: center;
+    background-color: #39AEA9;
+}
+
+section.users table thead tr th {
+    font-family: 'Sansita';
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFF;
+}
+
+section.users table tbody tr {
+    width: 100%;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 64px repeat(5, 1fr);
+    place-items: center;
+}
+
+section.users table tbody tr:nth-child(2n) {
+    background-color: #F4FAFA;
+}
+
+section.users table tbody tr th {
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+}
+section.users table tbody tr th:first-child {
+    font-weight: 600;
+}
+
+section.users table tbody tr button {
+    padding: 7px 20px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background-color: #FF6B6B;
+    font-family: 'Sansita';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFF;
+    cursor: pointer;
+}
